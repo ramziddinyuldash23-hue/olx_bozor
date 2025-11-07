@@ -1,0 +1,16 @@
+<h1>Register page</h1>
+
+<style>
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
+
+<form method="post" action="{{url_for('register')}}">
+    <input type="text" name="ism" placeholder="Ism yozing...">
+    <input type="text" name="phone" placeholder=" Telefon raqam kiriting..">
+    <input type= "password" name="parol" placeholder="Parol kiriting...0">
+    <button type="submit"> Saqlash </button>
+    <a href="{{url_for('login')}}"> Menda account bor </a>
+</form>
